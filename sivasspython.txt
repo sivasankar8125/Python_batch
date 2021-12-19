@@ -1,0 +1,234 @@
+
+
+print('hello python')
+
+print('hello python')
+
+lst=[1,45,79,5,48,85,45]
+for elm in lst:
+    print(elm)
+
+
+lst=[84,45,75]
+index=0
+for elm in lst:
+    index=index+1
+    print(elm)
+    print(index)
+
+
+lst=['siva','pavan','loka','ajay']
+index=0
+for elm in lst:
+    index=index+1
+    print(elm)
+    print(index)
+
+
+l1=["siva","python","learn"]
+s1="good"
+
+obj1=enumerate(l1)
+obj2=enumerate(s1)
+
+type(obj1)
+
+for elm in obj1:
+    print(elm)
+
+for char in obj2:
+    print(char)
+
+print("return type:" ,type(obj1))
+print(list(enumerate(l1)))
+
+print("return:",type(obj2))
+print(list(enumerate(s1)))
+
+a = [1,5,8,9]
+print(a)
+
+a = 1.54
+b = 8.456
+x = a+b
+print(x)
+
+dict = {
+    "name:" "siva",
+    "like:" "python",
+    x = dict.add("roll_no": 19)
+    print(x)
+}
+
+x = -5
+if x>0:
+   x= print("lable:" 'pos')
+else:
+        x=print("lable:" 'nav')
+        print(x)
+        
+        
+
+x = -1
+lable = 'pos'if x>0 else 'neg'
+print(lable)
+
+x=5
+lable= 'good' if x>0 else 'bad'
+a = lable
+print(a)
+
+a,d,g = "siva",1,"hello"
+print(a,d,g)
+
+colors = ["orange","apple","mango","grapes","kiwi"]
+print(colors)
+
+print(colors[0])
+
+print(colors[1:4])
+
+print(colors[::-2])
+
+print(colors[::-1])
+
+print(colors[-1::])
+
+print(colors[0:1])
+
+string='My String'
+string[0]
+
+string.replace('i','a')
+
+for elm in 'My String':
+    print(elm)
+
+from datetime import date
+'Today is: '  +  str(date.today())  +   ','
+
+from datetime import date
+'tomorrow: ' + str(date.today()) + ','
+
+print(f 'Today is {date.today()}')
+
+dir(list)
+
+dir(string)
+
+'my name is siva'.upper()
+
+import datetime
+str(datetime.datetime.now())
+
+x = iter(range(10))
+next(x)
+
+x = (x**2 for  x  in range(10))
+list(x)
+
+x = [1,2,3,4,5,6]
+y = x
+y[2] = 's'
+print(x,y)
+
+x.copy()
+
+employees = [(25,'suresh'),(10,'loka'),(2,'dhanush'),(89,'navya'),(524,'chintu'),(1,'siva'),(5,'sweety')]
+employees.sort(key=lambda x: x[0])
+employees
+
+employees = [(25,'suresh'),(10,'loka'),(2,'dhanush'),(89,'navya'),(524,'chintu'),(1,'siva'),(5,'sweety')]
+employees.sort(key=lambda x: x[1])
+employees
+
+employees = [(25,'suresh'),(10,'loka'),(2,'dhanush'),(89,'navya'),(524,'chintu'),(1,'siva'),(5,'sweety')]
+employees.sort(key=lambda x: x[0] , reverse=True)
+employees
+
+my_list = 5*['s']
+my_list
+
+x=['a']
+y=['b']
+x==y
+
+set = {1,2,3,4,5,6}
+set
+
+ my_list = [1,2,3,4,2,5,8,8,3,6,4,2,] 
+
+set(my_list)
+
+import datetime
+str(datetime.datetime.now())
+
+
+class Student_1(person):
+    def__init__(self,roll_no,name,age,address):
+        print("siva is inside student_1")
+        super().__init__(name,age,address)
+        self.roll_no = roll_no
+        
+    def is_student(self):
+        return True
+
+std_new = student_1(1,"siva",25,"dharmavaram")
+
+class Market_A():
+    
+    def__init__(self, name, price):
+        print("siva inside market_A")
+        self.name = name
+        self.price = price
+        
+    def get_name(self):
+            return self.name
+        
+        
+    def get_price(self):
+            return self.price
+        
+        
+class Market_B():
+    
+    def__init__(self,item,price):
+        print("siva inside market_B")
+        self.item = item
+        self.price = price
+    
+    def get_price(self):
+        return self.price
+    
+    def get_item(item):
+        return self.item
+    
+    
+class Market_C():
+    def__init__(self,item,price,new_item_test):
+        print("siva inside market_c")
+        self.item=item
+        self.price=price
+        self.new=new_item_test
+        
+class Child_M(Market_A, Market_B, Market_C):
+    def__init__(val1,val2,val3):
+        super().__init(val1,val2)
+        print("siva is the child_M")
+        
+        
+            
+
+Child_M.mro()
+
+def count_heads_legs(heads,legs):
+    r=0
+    while r <= heads:
+        c = heads-r
+        if 4*r+2*c==legs:
+            return[r,c]
+        r=r+1
+    return none
+
+count_heads_legs(35,94)
+
